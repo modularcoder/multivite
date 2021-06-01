@@ -1,28 +1,31 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
     "allowJs": true,
-    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "$core/*": [
         "./_core/src/*"
       ],
-      "$ui/*": [
-        "./_ui/src/*"
-      ],
       "$auth/*": [
         "./auth/src/*"
       ],
-    }
+      "$registry/*": [
+        "./registry/src/*"
+      ],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "./_core/src/**/*",
-    "./auth/src/**/*",
-    "./registry/src/**/*",
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-  ]
+  "include": ["./_core/src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

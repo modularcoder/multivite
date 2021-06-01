@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "../_core/node_modules/.bin/tsc --project ./tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "lodash": "../_core/node_modules/lodash",
     "moment": "../_core/node_modules/moment"
+  },
+  "devDependencies": {
+    "@types/lodash": "../_core/node_modules/@types/lodash",
+    "typescript": "../_core/node_modules/typescript"
   },
   "author": "",
   "license": "ISC"
