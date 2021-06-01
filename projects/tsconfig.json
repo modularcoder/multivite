@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "$core/*": [
+        "./_core/src/*"
+      ],
+      "$ui/*": [
+        "./_ui/src/*"
+      ],
+      "$auth/*": [
+        "./auth/src/*"
+      ],
+    }
+  },
+  "include": [
+    "./_core/src/**/*",
+    "./auth/src/**/*",
+    "./registry/src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}
